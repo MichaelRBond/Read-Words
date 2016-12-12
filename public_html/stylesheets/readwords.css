@@ -1,0 +1,9 @@
+#read-word {
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#read-word p {
+  font-size: 4em;
+}
