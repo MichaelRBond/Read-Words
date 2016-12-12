@@ -6,4 +6,15 @@
 
 #read-word p {
   font-size: 4em;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#read-word button {
+  font-size: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10em;
+  height: 3em;
 }
