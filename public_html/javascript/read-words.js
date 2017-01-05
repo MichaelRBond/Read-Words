@@ -12,8 +12,9 @@ readWords[3] = ["orange", "black", "brown", "white", "pink"];
 readWords[4] = ["red", "yellow", "blue", "green", "purple"];
 // General Two
 readWords[5] = ["to", "come", "my", "with", "we"];
+readWords[6] = ["my", "you", "what", "are", "now"];
 
-var color = ["red", "blue", "green", "yellow", "purple", "cyan", "pink", "orange"];
+var color = ["red", "blue", "green", "purple", "cyan", "pink", "orange"];
 
 //** ********************************************************************* **//
 
