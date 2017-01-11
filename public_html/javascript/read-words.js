@@ -13,6 +13,7 @@ readWords[4] = ["red", "yellow", "blue", "green", "purple"];
 // General Two
 readWords[5] = ["to", "come", "my", "with", "we"];
 readWords[6] = ["my", "you", "what", "are", "now"];
+readWords[7] = ["is", "how", "of", "so", "many"];
 
 var color = ["red", "blue", "green", "purple", "cyan", "pink", "orange"];
 
