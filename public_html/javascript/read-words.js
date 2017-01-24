@@ -15,6 +15,7 @@ readWords[5] = ["to", "come", "my", "with", "we"];
 readWords[6] = ["my", "you", "what", "are", "now"];
 readWords[7] = ["is", "how", "of", "so", "many"];
 readWords[8] = ["where", "this", "find", "from", "came"];
+readWords[9] = ["but", "on", "will", "be", "do"];
 
 var color = ["red", "blue", "green", "purple", "cyan", "pink", "orange"];
 
