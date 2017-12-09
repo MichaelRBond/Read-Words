@@ -1,21 +1,24 @@
-var readWords = new Array();
+// Stole from stackover
+// TODO : Fix.
+var queryParams;
+(window.onpopstate = function () {
+    var match,
+    pl     = /\+/g,  // Regex for replacing addition symbol with a space
+    search = /([^&=]+)=?([^&]*)/g,
+    decode = function (s) { return decodeURIComponent(s.replace(pl, " ")); },
+    query  = window.location.search.substring(1);
+    
+    queryParams = {};
+    while (match = search.exec(query))
+    queryParams[decode(match[1])] = decode(match[2]);
+  })();
 
-// General One
-readWords[0] = ["I", "like", "and", "the", "see"];
-// Number group 1 (1 through 5)
-readWords[1] = ["one", "two", "three", "four", "five"];
-// Number group 2 (6 through 10)
-readWords[2] = ["six", "seven", "eight", "nine", "ten"];
-// Color group 1
-readWords[3] = ["orange", "black", "brown", "white", "pink"];
-// Color Group 2
-readWords[4] = ["red", "yellow", "blue", "green", "purple"];
-// General Two
-readWords[5] = ["to", "come", "my", "with", "we"];
-readWords[6] = ["my", "you", "what", "are", "now"];
-readWords[7] = ["is", "how", "of", "so", "many"];
-readWords[8] = ["where", "this", "find", "from", "came"];
-readWords[9] = ["but", "on", "will", "be", "do"];
+var readWords = new Array();
+if (queryParams["grade"] === "1") {
+  readWords = firstReadWords;
+} else if (queryParams["grade"] === "k") {
+  readWords = kReadWords;
+}
 
 var color = ["red", "blue", "green", "purple", "cyan", "pink", "orange"];
 
